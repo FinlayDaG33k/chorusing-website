@@ -1,8 +1,33 @@
+:root {
+    --color-background: rgb(72,103,135);
+    --color-foreground: rgb(18,37,57);
+    --color-text: #FFFFFF;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
 
 .scripts button {
     border-radius: 25px;
     border: 5px red;
-    background-color: rgb(18,37,57);
+    background-color: var(--color-foreground);
     margin-top: 1rem;
     margin-left: 4rem;
     margin-right: 4rem;
@@ -11,37 +36,27 @@
     height: 500px;
 }
 
-.scrollbar-hidden::-webkit-scrollbar {
-    display: none;
-  }
-
-  ::-webkit-scrollbar {
-    display: none;
-}
-
-h1 {
-    padding: 0%;
-    margin: none;
-    color: white;
-    font-size: 5rem;
-    text-align: center;
-}
-
-
 .scripts a {
     border-radius: 25px;
-    background-color: rgb(72,103,135);
+    background-color: var(--color-background);
     text-decoration: none;
     font-size: 2rem;
-    color: white;
-    border-radius: 2px;
+    color: var(--color-text);
 }
 
-.scripts button1 {
+.scripts a.download-button {
+    border-radius: 0;
     padding: 20px;
-    background-color: rgb(72,103,135);
+    background-color: var(--color-background);
     text-decoration: none;
     font-size: 2rem;
-    color: white;
+    color: var(--color-text);
 }
 
+.scripts button-download {
+    padding: 20px;
+    background-color: var(--color-background);
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-text);
+}
