@@ -1,11 +1,15 @@
 :root {
-    --color-background: rgb(72,103,135);
-    --color-foreground: rgb(18,37,57);
+    --primary-light: #00B2FF;
+    --primary-normal: #0086BF;
+    --primary-dark: #005980;
+    --background-light: #00405C;
+    --background-normal: #002B3D;
+    --background-dark: #00151F;
     --color-text: #FFFFFF;
 }
 
 body {
-    background-color: var(--color-background);
+    background-color: var(--background-normal);
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
@@ -27,7 +31,7 @@ h1 {
 .scripts button {
     border-radius: 25px;
     border: 5px red;
-    background-color: var(--color-foreground);
+    background-color: var(--primary-normal);
     margin-top: 1rem;
     margin-left: 4rem;
     margin-right: 4rem;
@@ -38,7 +42,7 @@ h1 {
 
 .scripts a {
     border-radius: 25px;
-    background-color: var(--color-background);
+    background-color: var(--primary-normal);
     text-decoration: none;
     font-size: 2rem;
     color: var(--color-text);
@@ -47,7 +51,7 @@ h1 {
 .scripts a.download-button {
     border-radius: 0;
     padding: 20px;
-    background-color: var(--color-background);
+    background-color: var(--background-normal);
     text-decoration: none;
     font-size: 2rem;
     color: var(--color-text);
@@ -55,7 +59,7 @@ h1 {
 
 .scripts button-download {
     padding: 20px;
-    background-color: var(--color-background);
+    background-color: var(--background-normal);
     text-decoration: none;
     font-size: 2rem;
     color: var(--color-text);
